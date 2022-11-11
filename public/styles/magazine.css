@@ -1,0 +1,10 @@
+.magazine {
+  width: 90%;
+  aspect-ratio: 7/4;
+}
+
+.magazine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
