@@ -11,12 +11,13 @@ app.use(express.urlencoded({ extended: false }));
 
 //data
 const members = require("./public/data/members.js");
+const faculty = require("./public/data/faculty.js");
 
 //pages
 app.get("/", (req, res) => res.render("dashboard"));
 app.get("/about", (req, res) => res.render("about"));
 app.get("/members", (req, res) => res.render("members", { members: members }));
-app.get("/faculty", (req, res) => res.render("faculty"));
+app.get("/faculty", (req, res) => res.render("faculty", { faculty: faculty }));
 app.get("/magazine", (req, res) => res.render("magazine"));
 app.get("/projects", (req, res) => res.render("projects"));
 

@@ -1,0 +1,11 @@
+<h1>Faculty</h1>
+<div class="members">
+  <% for (let i = 0; i < faculty.length; i++) { %>
+
+  <div class="member">
+    <h2><%= faculty[i].name %></h2>
+    <div class="email"><%= faculty[i].email %></div>
+  </div>
+
+  <% } %>
+</div>
