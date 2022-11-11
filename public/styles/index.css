@@ -27,6 +27,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  display: none;
+}
+.line {
+  width: 100%;
+  height: 15%;
+  background-color: antiquewhite;
 }
 
 .main {
@@ -48,7 +64,11 @@ nav {
 
 .main-text {
   font-size: 18px;
-  margin-inline: 20px;
+  min-width: 0px;
+  max-width: 90%;
+  margin-block: 40px;
+  margin-inline: auto;
+  text-align: justify;
 }
 .summit-img {
   width: 100%;
@@ -77,5 +97,28 @@ hr {
 .vid-container {
   display: flex;
   justify-content: center;
-  margin: 80px;
+  margin: 40px;
+}
+
+video {
+  width: 100%;
+}
+
+@media only screen and (max-width: 940px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    left: -100vw;
+    width: 100vw;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+  }
+}
+.active {
+  left: 0px;
 }
