@@ -1,0 +1,11 @@
+<h1>Members</h1>
+<div class="members">
+  <% for (let i = 0; i < members.length; i++) { %>
+
+  <div class="member">
+    <h2><%= members[i].name %></h2>
+    <div class="email"><%= members[i].email %></div>
+  </div>
+
+  <% } %>
+</div>
