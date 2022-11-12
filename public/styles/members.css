@@ -4,12 +4,16 @@
   gap: 30px;
   margin: auto;
   width: 90%;
+  grid-auto-rows: 1fr;
 }
 
 .member {
   border: 1px solid white;
   padding: 20px;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .email {
