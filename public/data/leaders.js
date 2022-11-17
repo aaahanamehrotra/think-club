@@ -28,6 +28,10 @@ const data = [
     name: "Divyaansh Verma",
     post: "Director",
   },
+  {
+    name: "Prisha Dhawan",
+    post: "Director",
+  },
 ];
 
 module.exports = data;

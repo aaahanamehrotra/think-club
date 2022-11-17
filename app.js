@@ -14,6 +14,8 @@ const member = require("./public/data/member.js");
 const faculty = require("./public/data/faculty.js");
 const leaders = require("./public/data/leaders.js");
 
+
+member.sort()
 //pages
 app.get("/", (req, res) => res.render("dashboard"));
 app.get("/about", (req, res) => res.render("about"));
