@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 const member = require("./public/data/member.js");
 const faculty = require("./public/data/faculty.js");
 const leaders = require("./public/data/leaders.js");
+const result = require("./public/data/result.js");
 
-
-member.sort()
+member.sort();
 //pages
 app.get("/", (req, res) => res.render("dashboard"));
 app.get("/about", (req, res) => res.render("about"));
@@ -25,6 +25,7 @@ app.get("/members", (req, res) =>
 app.get("/faculty", (req, res) => res.render("faculty", { faculty: faculty }));
 app.get("/magazine", (req, res) => res.render("magazine"));
 app.get("/projects", (req, res) => res.render("projects"));
+app.get("/result", (req, res) => res.render("result", { result: result }));
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, console.log(`Server started at port ${PORT}`));

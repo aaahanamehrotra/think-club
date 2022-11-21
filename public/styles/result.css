@@ -1,0 +1,25 @@
+table,
+th,
+tr,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align-last: left;
+}
+
+table {
+  max-width: 80vw;
+  width: 400px;
+  margin: auto;
+}
+
+td,
+th {
+  padding: 15px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    width: 95vw;
+  }
+}
